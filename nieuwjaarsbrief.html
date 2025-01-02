@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nieuwjaarsbrief Flipcard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 800px; /* Breedte van de kaart */
+      height: 1200px; /* Hoogte van de kaart */
+      perspective: 1500px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #fff;
+    }
+
+    .flip-card-front {
+      background-image: url('A_cozy_and_charming_illustration_inspired_by_the_u.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .flip-card-back {
+      background-color: #fff;
+      color: #333;
+      transform: rotateY(180deg);
+      padding: 40px; /* Padding voor tekst */
+      box-sizing: border-box;
+      font-size: 14px; /* Kleinere tekstgrootte */
+      line-height: 1.5; /* Compactere regelafstand */
+      text-align: left;
+      overflow-y: auto; /* Scrollen indien nodig */
+    }
+  </style>
+</head>
+<body>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front"></div>
+      <div class="flip-card-back">
+        <h2>Liefste collega’s,</h2>
+        <p>
+          Wie had het ooit gedacht? Drie jaar geleden stond ik nog op een compleet ander kruispunt, en nu werk ik bij FOD Financiën, afdeling Kantoor Rechtszekerheid. Ja, rechtszekerheid (onze minder sexy maar noodzakelijke dienst). De ironie ontgaat me niet, want zekerheden zijn er hier niet altijd – behalve dan dat de programma's op hun eigen tempo en goesting leven en dat er altijd wel ergens een etentje gepland staat.
+        </p>
+        <p>
+          Mijn reis begon in een ietwat… klassieker team. Eentoniger, zullen we maar zeggen, compleet met de typische ambtenaren vibes. Je weet wel: lange stiltes in vergaderingen, afgewisseld met de bekendste quotes zoals: 
+          <ul>
+            <li>"Zo doen we dat hier al jaren."</li>
+            <li>"Dat is niet mijn taak."</li>
+            <li>"Daar is geen budget voor."</li>
+            <li>"Stuur dat maar door naar dienst X, die doen dat normaal."</li>
+            <li>"We zullen dat bekijken."</li>
+            <li>"Daar zijn nog geen richtlijnen voor."</li>
+            <li>"Hebben we daar een mailtje van gekregen?"</li>
+          </ul>
+        </p>
+        <p>
+          Inspirerend! Na een tijdje werd het toch wat zuur, en ik begon me af te vragen: is dit het dan? Is dit de glorieuze carrière die ik me had voorgesteld?
+        </p>
+        <p>
+          Maar toen hoorde ik over de HUB: het droomteam. Jonger, kleiner, dynamischer, met de leukste teambuildings, namelijk lekker gaan eten, en koffiemomenten – althans, als je de verhalen mag geloven. Het klonk precies wat ik nodig had: een frisse start! Dus, na heel wat wikken en wegen (lees: mezelf moed inspreken in de spiegel), besloot ik de sprong te wagen.
+        </p>
+        <p>
+          En nu sta ik hier. Toekomst zal uitwijzen of ik hier ooit spijt van krijg, maar voorlopig geniet ik vooral van de teamsgesprekken. Wat een feest! Een democratische arena waar iedereen zijn zegje kan doen (en anderen zich waarschijnlijk muten). Je steekt er altijd wat van op, zelfs als het maar is om te achterhalen wie de proppers en de vouwers van het team zijn.
+        </p>
+        <p>
+          En dan zijn er nog de etentjes. Want als er één ding is waar heel FOD Financiën in uitblinkt, is het eten, eten en nog eens eten. Ik had kunnen proberen om te ontsnappen, maar zelfs de meest rechtlijnige rechtzekerheidsmedewerker komt niet weg zonder minstens één diner mee te pakken. Gelukkig maakt het huidig team veel goed.
+        </p>
+        <p>
+          Dus, lieve collega’s, laten we het nieuwe jaar ingaan met minstens evenveel enthousiasme, koffiemomenten en culinaire avonturen. Of nou ja, misschien een beetje minder van die laatste – ik begin al te denken dat een sportabonnement geen overbodige luxe is.
+        </p>
+        <p>
+          <strong>Ik wens jullie een jaar vol geluk</strong><br>
+          Ik geef wel toe, met mij kan dat eigenlijk al niet meer stuk.<br>
+Hubbers: Ik zie jullie graag.<br>
+Met deze hoop zwans wens ik jullie eigenlijk gewoon een gelukkig nieuwjaar.
+
+        </p>
+        <p>
+          <strong>Jullie kapoen,</strong><br>
+          Pavitra Vandenhoven<br>
+          Financieel deskundige<br>
+          FOD Financiën | Patrimoniumdocumentatie | Rechtszekerheid | Kantoor Rechtszekerheid Dendermonde 1
+        </p>
+        <p>
+          <em>Aalst, 2 januari 2025</em>
+        </p>
+        <p>
+          P.S. binnenkort samen iets gaan eten?
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
